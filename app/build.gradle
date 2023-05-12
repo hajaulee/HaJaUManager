@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.hajaulee.anytv.hajaumanager'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.hajaulee.anytv.hajaumanager"
-        minSdk 21
-        targetSdk 32
+        minSdk 23
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 

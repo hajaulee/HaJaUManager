@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    >
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/list_item_icon_description"
+        android:padding="3dp"
+        android:src="@drawable/ic_android_red_24dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:paddingBottom="0dp"
+            android:text="@string/sample_text"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/latestVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="1dp"
+            android:paddingStart="5dp"
+            android:text="@string/sample_text"
+            android:textColor="#222"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/installedVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="1dp"
+            android:paddingStart="5dp"
+            android:text="@string/sample_text"
+            android:textColor="#222"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/removeButton"
+        android:layout_marginEnd="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_baseline_delete_forever_36"
+        />
+
+    <ImageButton
+        android:id="@+id/downloadButton"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_baseline_cloud_download_36" />
+
+</RelativeLayout>
