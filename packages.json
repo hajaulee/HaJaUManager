@@ -5,5 +5,12 @@
         "packageUrl": "https://github.com/hajaulee/AnyTV/raw/master/app/release/AnyTV-1.9.12-release.apk",
         "iconUrl": "https://github.com/hajaulee/AnyTV/blob/master/app/src/main/res/mipmap-xhdpi/app_icon.png?raw=true",
         "appName": "AnyTV"
+    },
+    {
+        "packageName": "com.hajaulee.anytv.hajaumanager",
+        "packageVersion": "1.0.2",
+        "packageUrl": "https://github.com/hajaulee/HaJaUManager/raw/main/app/release/app-release.apk",
+        "iconUrl": "https://raw.githubusercontent.com/hajaulee/HaJaUManager/main/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp",
+        "appName": "HaJaUManager"
     }
 ]
