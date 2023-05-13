@@ -61,9 +61,9 @@
 
     <ImageButton
         android:id="@+id/removeButton"
-        android:layout_marginEnd="52dp"
+        android:layout_marginEnd="60dp"
         android:layout_alignParentEnd="true"
-        android:layout_width="35dp"
+        android:layout_width="40dp"
         android:layout_height="70dp"
         android:backgroundTint="@color/white"
         app:srcCompat="@drawable/ic_baseline_delete_forever_36"
@@ -73,7 +73,7 @@
         android:id="@+id/downloadButton"
         android:layout_marginEnd="10dp"
         android:layout_alignParentEnd="true"
-        android:layout_width="35dp"
+        android:layout_width="40dp"
         android:layout_height="70dp"
         android:backgroundTint="@color/white"
         app:srcCompat="@drawable/ic_baseline_cloud_download_36" />
