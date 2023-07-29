@@ -53,9 +53,9 @@ class ListAdapter(context: Context, private val mResource: Int, items: List<Down
             removePackage(item.packageName)
         }
 
-        if (item.installedVersion == item.packageVersion){
-            disableButton(downloadButton)
-        }
+//        if (item.installedVersion == item.packageVersion){
+//            disableButton(downloadButton)
+//        }
         downloadButton.setOnClickListener {
             downloadPackage(item)
         }
