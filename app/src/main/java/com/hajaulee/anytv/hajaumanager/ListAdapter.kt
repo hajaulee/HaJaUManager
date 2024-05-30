@@ -43,8 +43,8 @@ class ListAdapter(context: Context, private val mResource: Int, items: List<Down
         val downloadButton = view.findViewById<ImageButton>(R.id.downloadButton)
 
         appName.text = item.appName
-        latestVersion.text = "Latest: ${item.packageVersion}"
-        installedVersion.text = "Installed: ${item.installedVersion}"
+        latestVersion.text = "Mới nhất: ${item.packageVersion}"
+        installedVersion.text = "Đang cài: ${item.installedVersion}"
         if (item.installedVersion == null){
             disableButton(removeButton)
         }
@@ -83,6 +83,7 @@ class ListAdapter(context: Context, private val mResource: Int, items: List<Down
     }
 
     private fun downloadPackage(packageInfo: DownloadPackageInfo){
+        Toast.makeText(context, "Đang tải ${packageInfo.packageName}", Toast.LENGTH_SHORT).show()
         try {
 
             val executor: ExecutorService = Executors.newSingleThreadExecutor()
@@ -114,7 +115,7 @@ class ListAdapter(context: Context, private val mResource: Int, items: List<Down
 
         } catch (ex: Exception) {
             ex.printStackTrace()
-            Toast.makeText(context, "Can not install", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Cài đặt ${packageInfo.packageName} thất bại ", Toast.LENGTH_SHORT).show()
         }
     }
 

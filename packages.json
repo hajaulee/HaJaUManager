@@ -8,9 +8,9 @@
     },
     {
         "packageName": "com.hajaulee.anytv.hajaumanager",
-        "packageVersion": "1.0.4",
+        "packageVersion": "1.0.5",
         "packageUrl": "https://github.com/hajaulee/HaJaUManager/raw/main/app/release/app-release.apk",
-        "iconUrl": "https://raw.githubusercontent.com/hajaulee/HaJaUManager/main/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp",
+        "iconUrl": "https://raw.githubusercontent.com/hajaulee/HaJaUManager/main/app/src/main/res/mipmap-hdpi/icon.png",
         "appName": "HaJaUManager"
     }
 ]
