@@ -1,8 +1,8 @@
 [
     {
         "packageName": "com.hajaulee.anytv",
-        "packageVersion": "1.9.26",
-        "packageUrl": "https://github.com/hajaulee/AnyTV/raw/master/app/release/AnyTV-1.9.26-release.apk",
+        "packageVersion": "1.9.27",
+        "packageUrl": "https://github.com/hajaulee/AnyTV/raw/master/app/release/AnyTV-1.9.27-release.apk",
         "iconUrl": "https://github.com/hajaulee/AnyTV/blob/master/app/src/main/res/mipmap-xhdpi/icon_movie.png?raw=true",
         "appName": "AnyTV"
     },
