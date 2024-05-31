@@ -12,5 +12,19 @@
         "packageUrl": "https://github.com/hajaulee/HaJaUManager/raw/main/app/release/app-release.apk",
         "iconUrl": "https://raw.githubusercontent.com/hajaulee/HaJaUManager/main/app/src/main/res/mipmap-xxhdpi/icon.png",
         "appName": "HaJaUManager"
+    },
+    {
+        "packageName": "com.hajau.simplekeyboard",
+        "packageVersion": "1.0",
+        "packageUrl": "https://github.com/hajaulee/vietnamese-keyboard/raw/master/app/release/app-release.apk",
+        "iconUrl": "https://github.com/hajaulee/vietnamese-keyboard/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
+        "appName": "HaJaU Keyboard"
+    },
+    {
+        "packageName": "com.hajau.onetwojump",
+        "packageVersion": "1.0",
+        "packageUrl": "https://github.com/hajaulee/one-two-jump/raw/master/app/release/app-release.apk",
+        "iconUrl": "https://github.com/hajaulee/one-two-jump/blob/master/app/src/main/res/drawable-xxhdpi/ic_launcher.png?raw=true",
+        "appName": "OneTwoJump"
     }
 ]
