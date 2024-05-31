@@ -2,7 +2,7 @@
 
 Quản lý ứng dụng android
 
-![Màn hình](Images/demo.jpg)
+<image src="Images/demo.jpg" width="350" />
 
 
 Dowload [here](https://github.com/hajaulee/HaJaUManager/raw/main/app/release/app-release.apk).
