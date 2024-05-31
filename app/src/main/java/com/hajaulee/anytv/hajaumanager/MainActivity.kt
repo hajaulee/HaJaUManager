@@ -41,6 +41,12 @@ class MainActivity : AppCompatActivity() {
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> true
+            R.id.action_refresh -> {
+                val navFragment = supportFragmentManager.fragments.first()
+                val firstFragment = navFragment.childFragmentManager.fragments.first() as FirstFragment
+                firstFragment.loadPackageInfo()
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }

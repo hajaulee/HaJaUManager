@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">HaJaUManager</string>
     <string name="action_settings">Cài đặt</string>
+    <string name="action_refresh">Làm mới</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">Quản lý ứng dụng</string>
     <string name="second_fragment_label">Second Fragment</string>

@@ -11,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
 import androidx.fragment.app.Fragment
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.hajaulee.anytv.hajaumanager.ExtensionsLoader.Companion.getPackageContext
 import com.hajaulee.anytv.hajaumanager.ExtensionsLoader.Companion.getVersion
 import com.hajaulee.anytv.hajaumanager.databinding.FragmentFirstBinding
@@ -26,7 +27,7 @@ import org.json.JSONArray
  */
 class FirstFragment : Fragment() {
 
-    private val TAG= "FirstFragment"
+    private val TAG = "FirstFragment"
     private var _binding: FragmentFirstBinding? = null
     private val infoUrl = "https://raw.githubusercontent.com/hajaulee/HaJaUManager/main/packages.json"
     private val listPackages: ArrayList<DownloadPackageInfo> = ArrayList()
@@ -48,11 +49,17 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val swipeRefreshLayout = view.findViewById<SwipeRefreshLayout>(R.id.swipeToRefresh)
+        swipeRefreshLayout.setOnRefreshListener {
+            loadPackageInfo()
+            swipeRefreshLayout.isRefreshing = false
+        }
+
         loadPackageInfo()
     }
 
     @SuppressLint("StaticFieldLeak")
-    private fun loadPackageInfo(){
+    fun loadPackageInfo(){
         object : AsyncTask<String?, String?, String>() {
             override fun doInBackground(vararg strings: String?): String {
                 val url = strings[0]
