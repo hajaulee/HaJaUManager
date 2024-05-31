@@ -83,7 +83,7 @@ class ListAdapter(context: Context, private val mResource: Int, items: List<Down
     }
 
     private fun downloadPackage(packageInfo: DownloadPackageInfo){
-        Toast.makeText(context, "Đang tải ${packageInfo.packageName}", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "Đang tải ${packageInfo.appName}", Toast.LENGTH_SHORT).show()
         try {
 
             val executor: ExecutorService = Executors.newSingleThreadExecutor()
@@ -115,7 +115,7 @@ class ListAdapter(context: Context, private val mResource: Int, items: List<Down
 
         } catch (ex: Exception) {
             ex.printStackTrace()
-            Toast.makeText(context, "Cài đặt ${packageInfo.packageName} thất bại ", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Cài đặt ${packageInfo.appName} thất bại ", Toast.LENGTH_SHORT).show()
         }
     }
 
