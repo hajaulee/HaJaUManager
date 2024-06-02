@@ -17,7 +17,7 @@
         "packageName": "com.hajau.simplekeyboard",
         "packageVersion": "1.0.1",
         "packageUrl": "https://github.com/hajaulee/vietnamese-keyboard/raw/master/app/release/keyboard-1.0.1-release.apk",
-        "iconUrl": "https://github.com/hajaulee/vietnamese-keyboard/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
+        "iconUrl": "https://github.com/hajaulee/vietnamese-keyboard/blob/master/app/src/main/res/mipmap-xxhdpi/ic_keyboard_launcher.png?raw=true",
         "appName": "HaJaU Keyboard"
     },
     {
