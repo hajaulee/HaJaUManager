@@ -29,8 +29,8 @@
     },
     {
         "packageName": "com.hajau.jaco_keyboard",
-        "packageVersion": "1.0.3",
-        "packageUrl": "https://github.com/hajaulee/HaJaUManager/raw/main/Apks/JacoKeyboard-1.0.3-release.apk",
+        "packageVersion": "1.0.4",
+        "packageUrl": "https://github.com/hajaulee/HaJaUManager/raw/main/Apks/JacoKeyboard-1.0.4-release.apk",
         "iconUrl": "https://github.com/hajaulee/HaJaUManager/blob/main/Icons/com.hajau.jaco_keyboard/ic_launcher.png?raw=true",
         "appName": "Jaco Keyboard"
     },
