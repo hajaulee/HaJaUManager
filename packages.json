@@ -40,5 +40,12 @@
         "packageUrl": "https://github.com/hajaulee/one-two-jump/raw/master/app/release/app-release.apk",
         "iconUrl": "https://github.com/hajaulee/one-two-jump/blob/master/app/src/main/res/drawable-xxhdpi/ic_launcher.png?raw=true",
         "appName": "OneTwoJump"
-    }
+    },
+    {
+        "packageName": "com.hajau.jaco_3_keyboard",
+        "packageVersion": "1.0.1",
+        "packageUrl": "https://github.com/hajaulee/HaJaUManager/raw/main/Apks/JacoKeyboard-1.0.1-release.apk",
+        "iconUrl": "https://github.com/hajaulee/HaJaUManager/blob/main/Icons/com.hajau.jaco_3_keyboard/ic_launcher.png?raw=true",
+        "appName": "Jaco Keyboard"
+    },
 ]
