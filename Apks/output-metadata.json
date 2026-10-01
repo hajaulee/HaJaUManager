@@ -11,10 +11,27 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 0,
-      "versionName": "1.0.1",
-      "outputFile": "Jaco3Keyboard-1.0.1-release.apk"
+      "versionCode": -1,
+      "versionName": "1.0.3",
+      "outputFile": "Jaco3Keyboard-1.0.3-release.apk"
     }
   ],
-  "elementType": "File"
+  "elementType": "File",
+  "baselineProfiles": [
+    {
+      "minApi": 28,
+      "maxApi": 30,
+      "baselineProfiles": [
+        "baselineProfiles/1/Jaco3Keyboard-1.0.3-release.dm"
+      ]
+    },
+    {
+      "minApi": 31,
+      "maxApi": 2147483647,
+      "baselineProfiles": [
+        "baselineProfiles/0/Jaco3Keyboard-1.0.3-release.dm"
+      ]
+    }
+  ],
+  "minSdkVersionForDexing": 25
 }
