@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.hajau.jaco_keyboard",
+  "applicationId": "com.hajau.jaco_3_keyboard",
   "variantName": "release",
   "elements": [
     {
@@ -12,8 +12,8 @@
       "filters": [],
       "attributes": [],
       "versionCode": 0,
-      "versionName": "1.1.15",
-      "outputFile": "JacoKeyboard-1.1.15-release.apk"
+      "versionName": "1.0.1",
+      "outputFile": "Jaco3Keyboard-1.0.1-release.apk"
     }
   ],
   "elementType": "File"
