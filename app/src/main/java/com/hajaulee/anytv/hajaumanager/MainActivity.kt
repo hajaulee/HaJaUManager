@@ -1,6 +1,7 @@
 package com.hajaulee.anytv.hajaumanager
 
 import android.os.Bundle
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -40,7 +41,10 @@ class MainActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_settings -> true
+            R.id.action_settings -> {
+                startActivity(Intent(this, SettingsActivity::class.java))
+                true
+            }
             R.id.action_refresh -> {
                 val navFragment = supportFragmentManager.fragments.first()
                 val firstFragment = navFragment.childFragmentManager.fragments.first() as FirstFragment

@@ -3,6 +3,7 @@ package com.hajaulee.anytv.hajaumanager
 import android.content.Context
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
+import android.os.Build
 
 
 class ExtensionsLoader {
@@ -25,7 +26,12 @@ class ExtensionsLoader {
                     packageName,
                     PackageManager.GET_META_DATA
                 )
-                pInfo.versionName
+                pInfo.versionName ?: if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                    pInfo.longVersionCode.toString()
+                } else {
+                    @Suppress("DEPRECATION")
+                    pInfo.versionCode.toString()
+                }
             } catch (e1: PackageManager.NameNotFoundException) {
                 null
             }

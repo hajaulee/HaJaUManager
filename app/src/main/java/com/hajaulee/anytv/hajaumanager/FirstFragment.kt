@@ -51,11 +51,19 @@ class FirstFragment : Fragment() {
 
         val swipeRefreshLayout = view.findViewById<SwipeRefreshLayout>(R.id.swipeToRefresh)
         swipeRefreshLayout.setOnRefreshListener {
+            swipeRefreshLayout.isRefreshing = true
             loadPackageInfo()
-            swipeRefreshLayout.isRefreshing = false
         }
 
         loadPackageInfo()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (listPackages.isNotEmpty()) {
+            refreshInstalledVersions()
+            updateListView()
+        }
     }
 
     @SuppressLint("StaticFieldLeak")
@@ -84,6 +92,7 @@ class FirstFragment : Fragment() {
             public override fun onPostExecute(jsonContent: String) {
                 updateListPackages(jsonContent)
                 updateListView()
+                _binding?.swipeToRefresh?.isRefreshing = false
             }
         }.execute(infoUrl)
     }
@@ -120,8 +129,25 @@ class FirstFragment : Fragment() {
     fun updateListView(){
         val listView: ListView = binding.listview
 
-        val adapter = ListAdapter(activity!!, R.layout.sample_list_item, listPackages)
+        val adapter = ListAdapter(requireContext(), listPackages)
         listView.adapter = adapter
+        listView.post {
+            for (index in 0 until listView.childCount) {
+                val actionButton = listView.getChildAt(index)
+                    .findViewById<View>(R.id.downloadButton)
+                if (actionButton?.isFocusable == true) {
+                    actionButton.requestFocus()
+                    break
+                }
+            }
+        }
+    }
+
+    private fun refreshInstalledVersions() {
+        val packageManager = requireContext().packageManager
+        listPackages.forEach { app ->
+            app.installedVersion = getVersion(packageManager, app.packageName)
+        }
     }
 
     override fun onDestroyView() {

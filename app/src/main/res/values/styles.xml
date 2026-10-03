@@ -1,0 +1,38 @@
+<resources>
+    <style name="SettingsTitle">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:textColor">@color/espresso_accent</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="SettingsSubtitle">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:textColor">@color/espresso_text_secondary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+    </style>
+
+    <style name="SettingsSectionTitle">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:textColor">@color/espresso_accent</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+
+    <style name="SettingsCardTitle">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:textColor">@color/espresso_text_primary</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SettingsCardDescription">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:textColor">@color/espresso_text_secondary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+</resources>
