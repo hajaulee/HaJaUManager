@@ -3,6 +3,9 @@ package com.hajaulee.anytv.hajaumanager
 import android.os.Bundle
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
@@ -21,6 +24,26 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        val initialPaddingLeft = binding.root.paddingLeft
+        val initialPaddingTop = binding.root.paddingTop
+        val initialPaddingRight = binding.root.paddingRight
+        val initialPaddingBottom = binding.root.paddingBottom
+        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { view, insets ->
+            val systemBarInsets = insets.getInsets(
+                WindowInsetsCompat.Type.systemBars() or
+                    WindowInsetsCompat.Type.displayCutout()
+            )
+            view.setPadding(
+                initialPaddingLeft + systemBarInsets.left,
+                initialPaddingTop + systemBarInsets.top,
+                initialPaddingRight + systemBarInsets.right,
+                initialPaddingBottom + systemBarInsets.bottom
+            )
+            insets
+        }
+        ViewCompat.requestApplyInsets(binding.root)
 
         setSupportActionBar(binding.toolbar)
 
